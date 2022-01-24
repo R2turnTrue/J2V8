@@ -13,6 +13,7 @@ endif()
 
 cmake_minimum_required(VERSION 3.6)
 project(j2v8)
+
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
 # set up the module path

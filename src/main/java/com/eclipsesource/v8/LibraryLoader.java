@@ -110,7 +110,7 @@ class LibraryLoader {
             return;
 
         /* Failed to find the library */
-        throw new UnsatisfiedLinkError("Could not load J2V8 library. Reasons: " + message.toString()); //$NON-NLS-1$
+        new UnsatisfiedLinkError("Could not load J2V8 library. Reasons: " + message.toString()).printStackTract(); //$NON-NLS-1$ // minejs
     }
 
     static boolean load(final String libName, final StringBuffer message) {

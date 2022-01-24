@@ -55,7 +55,7 @@ def build_j2v8_cmake(config):
             ../../ \
             %(cmake_vars)s \
             %(cmake_pdb_fix_flag)s \
-            -G"Visual Studio 14 2015%(cmake_gen_suffix)s"
+            -G"Visual Studio 16 2019"
         """
         % locals()]
 
